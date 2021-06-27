@@ -15,6 +15,13 @@ const car = {
 	},
 };
 
+// Use Object.create to instantiate a new car
+var yourCar = Object.create( car );
+
+// Now we can see that one is a prototype of the other
+console.log( yourCar.noOfWheels );
+
+
 // Object.create(proto[, propertiesObject])
 /*
 const myCar = Object.create(car, { owner: { value: 'John' } });
